@@ -13,7 +13,6 @@ function compile(str, path) {
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(express.logger('dev'));
 
 // Transform CSS
 app.use(stylus.middleware({
